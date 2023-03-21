@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Gerenciador de Produtos</title>
+</head>
+<body>
+    <header>
+        <img src="./assets/img/logo_dnc_branco.png" alt="Logo DNC" id="logo">
+        <h1>Controle de Produtos</h1>
+    </header>
+    <main>
+        <h2>Produtos</h2>
+        <span>Lista de Produtos</span>
+        <div class="card">
+            <div class="inputpd">
+                <label for="">Nome do Produto</label>
+                <input type="text" id="pdnome" placeholder="Iphone XR">
+            </div>
+            <div class="inputpd">
+                <label for="">Preco do Produto</label>
+                <input type="text" id="pdpreco" placeholder="R$ 00,00">
+            </div>
+            <button type="button" onclick="produto.adicionar()">Adicionar</button>
+            <button type="reset" onclick="produto.cancelar()">Cancelar</button>
+        </div>
+        <div class="conteudo">
+            <table border="1">
+                <thead>
+                    <th>ID</th>
+                    <th>Produto</th>
+                    <th>Preco</th>
+                    <th>Remover</th>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
